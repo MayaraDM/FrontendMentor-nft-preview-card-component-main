@@ -5,6 +5,7 @@
     padding: 0;
     font-family: 'Outfit';
     font-size: 18px;
+    box-sizing: border-box;
 }
 
 body {
@@ -15,6 +16,8 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/* Mobile */ 
 main {
     max-width: 325px;
     height: 540px;
@@ -27,18 +30,46 @@ main {
 }
 img {
     display: block;
-    object-fit: cover;
+    
 }
 
-figure img {
-    border-radius: 0.5rem;
-    max-width: 100%;
+a {
+    color: hsl(0, 0%, 100%);
 }
-figure:hover {
+a:hover {
+    color: hsl(178, 100%, 50%);
     cursor: pointer;
-    background-color: hsl(178, 100%, 50%);
     transition: all 0.3s ease 0s;
 }
+
+/* Main image */
+figure {
+    position: relative;
+    display: block;
+}
+figure img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+}
+.view-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    border-radius: 0.5rem;
+    background-color: hsl(178, 100%, 50%);
+}
+.view-img:hover {
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+/* Text */
 h1 {
     color: hsl(0, 0%, 100%);
     font-size: 1.25rem;
@@ -70,6 +101,7 @@ p {
     margin-left: 0.5rem;
     font-size: 0.9rem;
 }
+
 .line {
     border-top: 1px solid hsl(215, 32%, 27%);
     margin: 5px;
@@ -88,15 +120,7 @@ p {
     margin-left: 1rem;
     font-size: 0.9rem;
 }
-span {
-    font-size: 0.9rem;
-    color: hsl(0, 0%, 100%);
-}
-span:hover {
-    color: hsl(178, 100%, 50%);
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
+
 .attribution {
     font-size: 11px; text-align: center;
     color: hsl(0, 0%, 100%);
@@ -107,6 +131,8 @@ span:hover {
     color: hsl(178, 100%, 50%);
 }
 
-@media (min-width:375px) {
-
+@media (min-width:400px) {
+    main {
+        max-width: 350px;
+    }
 }
