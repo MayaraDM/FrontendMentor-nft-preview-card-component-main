@@ -6,6 +6,7 @@
     font-family: 'Outfit';
     font-size: 16px;
     box-sizing: border-box;
+    
 }
 
 body {
@@ -44,7 +45,7 @@ figure {
     position: relative;
     display: block;
 }
-figure img {
+figure > img {
     display: block;
     max-width: 100%;
     border-radius: 0.5rem;
@@ -60,47 +61,55 @@ figure img {
     right: 0;
     opacity: 0;
     border-radius: 0.5rem;
-    background-color: hsl(178, 100%, 50%);
+    background-color: hsla(178, 100%, 50%, 0.5);
 }
 .view-img:hover {
-    opacity: 0.5;
+    opacity: 1;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 /* Text */
 h1 a {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 p {
     color: hsl(215, 51%, 70%);
+    line-height: 1.5;
 }
+
+/*Price details */
 .price-container {
     display: flex;
     justify-content: space-between;
 }
 .ethereum {
     display: flex;
-}
-.ethereum p {
     color: hsl(178, 100%, 50%);
-    margin-left: 0.5rem;
-    
+    font-size: 0.9rem;
+    background: url(./images/icon-ethereum.svg);
+    background-repeat: no-repeat;
+    padding-left: 1.15rem;
+    background-size: 0.75rem;
+    background-position: left center;
 }
+
 .time-left {
     display: flex;
-}
-.time-left p {
-    margin-left: 0.5rem;
-    
+    background: url(./images/icon-clock.svg);
+    background-repeat: no-repeat;
+    padding-left: 1.5rem;
+    background-size: 1.15rem;
+    background-position: left center;
 }
 
-.line {
+hr {
+    border: none;
     border-top: 1px solid hsl(215, 32%, 27%);
-    margin: 5px;
 }
 
+/* Author details */
 .author-container {
     display: flex;
     align-items: center;
@@ -118,6 +127,7 @@ p {
     font-size: 0.9rem;
 }
 
+/* Footer */ 
 .attribution {
     font-size: 11px; text-align: center;
     color: hsl(0, 0%, 100%);
