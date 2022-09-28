@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Outfit';
-    font-size: 18px;
+    font-size: 16px;
     box-sizing: border-box;
 }
 
@@ -70,7 +70,7 @@ figure img {
 
 /* Text */
 h1 a {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 p {
@@ -86,14 +86,14 @@ p {
 .ethereum p {
     color: hsl(178, 100%, 50%);
     margin-left: 0.5rem;
-    font-size: 0.9rem;
+    
 }
 .time-left {
     display: flex;
 }
 .time-left p {
     margin-left: 0.5rem;
-    font-size: 0.9rem;
+    
 }
 
 .line {
@@ -106,7 +106,7 @@ p {
     align-items: center;
 }
 .author-container img {
-    max-width: 30px;
+    max-width: 35px;
     border: 2px solid hsl(0, 0%, 100%);
     border-radius: 50%;
 }
@@ -126,10 +126,4 @@ p {
 .attribution a {
     font-size: 11px;
     color: hsl(178, 100%, 50%);
-}
-
-@media (min-width:400px) {
-    main {
-        max-width: 350px;
-    }
 }
