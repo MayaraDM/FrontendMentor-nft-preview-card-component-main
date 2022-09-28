@@ -28,12 +28,9 @@ main {
     justify-content: space-between;
     border-radius: 1rem;
 }
-img {
-    display: block;
-    
-}
 
 a {
+    text-decoration: none;
     color: hsl(0, 0%, 100%);
 }
 a:hover {
@@ -48,6 +45,7 @@ figure {
     display: block;
 }
 figure img {
+    display: block;
     max-width: 100%;
     border-radius: 0.5rem;
 }
@@ -65,20 +63,16 @@ figure img {
     background-color: hsl(178, 100%, 50%);
 }
 .view-img:hover {
-    opacity: 1;
+    opacity: 0.5;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
 /* Text */
-h1 {
-    color: hsl(0, 0%, 100%);
+h1 a {
     font-size: 1.25rem;
 }
-h1:hover {
-    color: hsl(178, 100%, 50%);
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
+
 p {
     color: hsl(215, 51%, 70%);
 }
@@ -118,6 +112,9 @@ p {
 }
 .author-container p {
     margin-left: 1rem;
+    font-size: 0.9rem;
+}
+.author-container a {
     font-size: 0.9rem;
 }
 
